@@ -11,6 +11,7 @@
     padding: 1rem 0;
     font-size: 1.2rem;
     text-align: center;
+    width: 80%;
   }
 
   &__picture {
@@ -23,7 +24,7 @@
     justify-content: center;
     align-items: center;
     padding: 1rem 0;
-
+    width: 80%;
     span {
       font-weight: bold;
     }
@@ -35,20 +36,12 @@
     font-size: 1.5rem;
   }
 
-  &__buy {
+  &__back-button {
     border: none;
     color: white;
     height: 2rem;
     width: 8rem;
     background: black;
     margin-bottom: 1rem;
-  }
-
-  &__back-button {
-    height: 2rem;
-    width: 4rem;
-    background: black;
-    border: 0.2rem;
-    color: white;
   }
 }
