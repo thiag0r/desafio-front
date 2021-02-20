@@ -1,0 +1,41 @@
+.cart {
+  position: absolute;
+  box-sizing: border-box;
+  border: 2px solid #f05454;
+  left: 0;
+  background: white;
+  width: 100%;
+  right: 0;
+
+  div {
+    padding: 0.5rem 0;
+  }
+
+  &__product-option {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #cecece;
+    font-weight: bold;
+    color: #222831;
+  }
+
+  &__total-price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f05454;
+    color: #222831;
+    font-weight: bold;
+  }
+
+  hr {
+    margin: 0;
+  }
+}
+
+@media (min-width: 700px) {
+  .cart {
+    width: 20rem;
+  }
+}
