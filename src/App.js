@@ -1,10 +1,17 @@
-import './App.css';
+import React from 'react'
 
-function Home() {
+import Header from './components/header/Header'
+import Footer from './components/footer/Footer'
+
+import Home from './views/home/Home'
+import './App.scss'
+
+export default function App() {
   return (
-    <div>
-    </div>
-  );
+      <React.Fragment>
+        <Header />
+        <Home />
+        <Footer />
+      </React.Fragment>
+  )
 }
-
-export default Home;

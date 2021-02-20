@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+header {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  width: 100%;
+  background-color: #f05454;
+}
+
+header strong {
+  font-family: "Lobster", cursive;
+  color: #222831;
+  font-size: 2rem;
+}
+
+.header {
+  &__title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+  }
+
+  &__cart-container {
+    position: absolute;
+    border: 2px solid black;
+    box-sizing: border-box;
+    right: 0;
+    height: 4rem;
+    width: 70px;
+
+    &-top {
+      display: flex;
+      height: 50%;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &-bottom {
+      display: flex;
+      height: 50%;
+      font-weight: bold;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__counter-cicle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 12px;
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+  }
+
+  &__cart-list {
+    position: absolute;
+    box-sizing: border-box;
+    border: 2px solid #30475e;
+    left: 0;
+    background: white;
+    height: 25rem;
+    width: 100%;
+    right: 0;
+  }
+}
