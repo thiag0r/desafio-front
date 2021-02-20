@@ -3,6 +3,7 @@ import ProductsService from '../../service/ProductsService'
 
 import ProductInfo from '../../components/product-info/ProductInfo'
 import ProductsList from '../../components/product-list/ProductsList'
+import Loader from '../../components/loader/Loader'
 import {mockedResponse} from './mockedResponse'
 
 import './home.scss'
@@ -40,7 +41,11 @@ export default function Home() {
   return (
     <div className="home">
       <div className="home__card" onClick={(e) => showProductDetails(e)}>
-        {showProductInfo ? <ProductInfo isFetching={isFetching} product={products[0]} /> : <ProductsList isFetching={isFetching} products={products} /> }
+        { isFetching ? (
+          <Loader />
+        ) : (
+            showProductInfo ? <ProductInfo product={products[0]} /> : <ProductsList products={products} /> 
+        ) }
       </div>
     </div>
   )
