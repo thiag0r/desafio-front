@@ -1,6 +1,30 @@
-footer {
+.Footer {
+  display: flex;
+  flex-direction: column;
   bottom: 0;
   height: 8rem;
-  background-color: #222831;
+  background-color: #161616;
   border-top: 2px solid #f05454;
+  color: white;
+}
+
+.Footer__top-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 2;
+  width: 100%;
+  font-weight: bold;
+}
+
+.Footer__bottom-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 4;
+  width: 100%;
+
+  &--my-name {
+    font-weight: 800;
+  }
 }
