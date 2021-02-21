@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Cart from '../../components/cart/Cart'
 import { ReactComponent as CartIcon } from '../../assets/cart.svg'
 import './header.scss'
+import CartService from '../../service/CartService'
 
 export default function Header() {
     const [isCartOpenned, setIsCartOpenned] = useState()
@@ -16,7 +17,7 @@ export default function Header() {
                         <span className="header__counter-cicle">2</span>
                     </div>
                     <div className="header__cart-container-bottom" >
-                        <span className="header__total-price">R$100,00</span>
+                        <span className="header__total-price">R$ {CartService.getTotalCartPrice()}</span>
                     </div>
                 </div>
                 <div className="header__title-container">

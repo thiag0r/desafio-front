@@ -1,4 +1,5 @@
 class ProductUtils {
+    //Método para não deixar um texto muito grande na listagem
     static formatProductTitle = title => {
         return title.length > 30 ? `${title.slice(0, 30)}...` : title
     }
